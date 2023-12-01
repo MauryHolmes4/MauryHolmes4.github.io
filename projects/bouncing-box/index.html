@@ -15,7 +15,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 200px;  /* <--- Change me! */
+			left: 300px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -88,9 +88,9 @@
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
-			function handleBoxClick() {
+			function handleBoxClick(boardWidth) {
 				positionX = 0;
-				boardWidth = 1799;
+				
 				changeBoxText(points);
 			points = points + 1
 			if (speed > 0){
